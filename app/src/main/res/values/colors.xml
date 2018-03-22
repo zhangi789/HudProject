@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#647FA0</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_tv">#FFFFFF</color>
+
+    <color name="color_tv2">#BEBEBE</color>
+    <color name="scan_corner_color">#0effc2</color>
+    <color name="color_deep_blue">#051A39</color>
+    <color name="search_edit_gray">#ffcccccc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <color name="iron">#CCCCCC</color>
+</resources>

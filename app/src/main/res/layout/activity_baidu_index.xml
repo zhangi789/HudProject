@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <include
+
+
+        layout="@layout/include_baidu"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_change"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@mipmap/exchange" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_contor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edit_current"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="当前位置"
+                android:textColor="@color/color_tv"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/edit_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edit_current"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/shape" />
+
+            <EditText
+                android:id="@+id/edit_aim"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/edit_line"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="点击输入终点"
+                android:textColor="@color/color_tv"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/re_contor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/edit_aim2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="点击输入终点"
+                android:textColor="@color/color_tv"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/edit_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edit_aim2"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/shape" />
+
+            <EditText
+                android:id="@+id/edit_curren2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/edit_line2"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="当前位置"
+                android:textColor="@color/color_tv"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_nav"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_select4"
+        android:text="导航"
+        android:textColor="@color/color_tv"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="-常用地址，点击直接导航-"
+        android:textColor="@color/color_tv"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:visibility="gone"></ListView>
+
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btn_delefe"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/cricle_delete"
+            android:text="删除记录"
+            android:textColor="@color/color_tv"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

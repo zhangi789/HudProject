@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@mipmap/ic_bottombar_found_mormal"
+            android:title="我的设备" />
+        <item
+            android:id="@+id/item2"
+            android:icon="@mipmap/ic_bottombar_found_mormal"
+            android:title="设置" />
+        <item
+            android:id="@+id/item3"
+            android:icon="@mipmap/ic_bottombar_found_mormal"
+            android:title="消息中心" />
+
+        <item
+            android:id="@+id/item4"
+            android:icon="@mipmap/ic_bottombar_found_mormal"
+            android:title="意见反馈" />
+        <item
+            android:id="@+id/item5"
+            android:icon="@mipmap/ic_bottombar_found_mormal"
+            android:title="关于" />
+    </group>
+
+
+</menu>

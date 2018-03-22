@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F9"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/info"
+        layout="@layout/toor_head2_back"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="基本信息"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re1"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/re2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv12"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_device_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="设备序列号"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_deviceid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="13sp"
+                android:text="AA12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv22"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re2"
+            android:background="#E4E4E4" />
+
+
+        <RelativeLayout
+            android:id="@+id/re_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv22"
+            android:background="#FFFFFF">
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="备注名称"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_ipnoe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/ivse"
+                android:textSize="13sp"
+                android:text="点击修改备注" />
+
+            <ImageView
+                android:id="@+id/ivse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/common_icon_arrow_right2x" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re_car_name"
+            android:background="#E4E4E4" />
+
+
+        <RelativeLayout
+            android:id="@+id/re_car_sale"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv33"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_car_sele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="车型"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/tv_car_seceres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/ivsr"
+                android:textSize="13sp"
+                android:text="点击选择车型" />
+
+
+            <ImageView
+                android:id="@+id/ivsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/common_icon_arrow_right2x" />
+
+        </RelativeLayout>
+
+     <!--   <TextView
+            android:id="@+id/tv44"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re_car_sale"
+            android:background="#E4E4E4" />-->
+
+
+
+        <TextView
+            android:id="@+id/tv55"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re_car_sale"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/re_fwversion"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv55"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="固件更新"
+                android:textSize="16sp" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/common_icon_arrow_right2x" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/re8"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/re_fwversion"
+            android:background="#FFFFFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="OBD自动选择车型"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re_fwversion"
+            android:background="#E4E4E4" />
+        <RelativeLayout
+            android:id="@+id/re_pop_show"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_select3"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_pop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="设备名称"
+                android:textColor="#242424"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/re_pop_content"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_pop_name"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/tv_pop_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_select"
+                    android:hint="请输入设备昵称"
+                    android:textColor="#242424"
+                    android:textSize="14sp"
+                    android:maxLength="10"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/re_pop_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btn_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#8BA4DA"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/btn_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="#8BA4DA"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="基本信息"
+             android:textSize="16sp" />
+     </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />
+     <RelativeLayout
+         android:background="#FFFFFF"
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:id="@+id/tv_device_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="设备序列号"
+             android:textSize="16sp" />
+
+         <TextView
+
+             android:id="@+id/tv_deviceid"
+             android:text="AA12"
+             android:gravity="right"
+             android:layout_marginRight="20dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </RelativeLayout>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />
+
+
+     <RelativeLayout
+         android:id="@+id/re_car_name"
+         android:background="#FFFFFF"
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:id="@+id/tv_device_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="备注名称"
+             android:textSize="16sp" />
+         <TextView
+             android:id="@+id/tv_ipnoe_name"
+             android:layout_alignParentRight="true"
+             android:layout_toLeftOf="@+id/ivse"
+             android:layout_centerVertical="true"
+             android:layout_width="wrap_content"
+             android:layout_marginRight="40dp"
+             android:text="点击修改备注"
+             android:layout_height="wrap_content" />
+         <ImageView
+             android:id="@+id/ivse"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="18dp"
+             android:src="@mipmap/common_icon_arrow_right2x" />
+
+     </RelativeLayout>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />
+
+
+     <RelativeLayout
+
+         android:id="@+id/re_car_sale"
+         android:background="#FFFFFF"
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:id="@+id/tv_car_sele"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="车型"
+             android:textSize="16sp" />
+         <TextView
+
+             android:id="@+id/tv_car_seceres"
+             android:layout_alignParentRight="true"
+             android:layout_toLeftOf="@+id/ivsr"
+             android:layout_centerVertical="true"
+             android:layout_width="wrap_content"
+             android:layout_marginRight="40dp"
+             android:text="点击选择车型"
+             android:layout_height="wrap_content" />
+
+
+         <ImageView
+             android:id="@+id/ivsr"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="18dp"
+             android:src="@mipmap/common_icon_arrow_right2x" />
+
+     </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />
+     <RelativeLayout
+         android:background="#FFFFFF"
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="OBD自动选择车型"
+             android:textSize="16sp" />
+     </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />
+     <RelativeLayout
+
+         android:id="@+id/re_fwversion"
+         android:background="#FFFFFF"
+         android:layout_width="match_parent"
+         android:layout_height="46dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="16dp"
+             android:text="固件更新"
+             android:textSize="16sp" />
+         <ImageView
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="18dp"
+             android:src="@mipmap/common_icon_arrow_right2x" />
+
+     </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#E4E4E4"
+         android:layout_height="1dp" />-->
+</LinearLayout>

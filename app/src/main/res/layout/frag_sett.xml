@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+    <!--
+        <include layout="@layout/toor_head_hud"></include>-->
+    <ImageView
+        android:id="@+id/iv_thme"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@mipmap/shape" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_thme"
+        android:orientation="vertical"
+        android:weightSum="10.5">
+
+        <LinearLayout
+            android:id="@+id/lind"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/info"
+            android:layout_weight="4.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="- 设备主题 -"
+                        android:textColor="#FEFFF5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pager_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6.5">
+
+                    <com.shdnxc.cn.activity.scorellpager.DiscreteScrollView
+                        android:id="@+id/discreteScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        app:dsv_orientation="horizontal"></com.shdnxc.cn.activity.scorellpager.DiscreteScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@mipmap/shape" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="5.4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="2">
+
+                    <ImageButton
+                        android:id="@+id/toor_iv_detection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:background="@mipmap/icon_mute"
+                        android:padding="0dp"
+                        android:visibility="visible" />
+
+                    <SeekBar
+                        android:id="@+id/mSeerBar"
+                        style="@style/Widget.SeekBar.Normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/toor_iv_detection2"
+                        android:layout_toRightOf="@+id/toor_iv_detection"
+                        android:max="7"
+                        android:progress="4" />
+                    <!--     <com.shdnxc.cn.activity.view.BubbleSeekBar
+                             android:id="@+id/sBar"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_centerVertical="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_toLeftOf="@+id/toor_iv_detection2"
+                             android:layout_toRightOf="@+id/toor_iv_detection"
+                             app:bsb_max="8"
+                             app:bsb_min="1"
+                             app:bsb_progress="4"
+                             app:bsb_second_track_color="@color/color_samll_red"
+                             app:bsb_touch_to_seek="true"
+                             app:bsb_track_color="@color/viewfinder_mask"
+                             app:bsb_track_size="4dp" />-->
+                    <ImageButton
+                        android:id="@+id/toor_iv_detection2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@mipmap/icon_voice"
+                        android:padding="0dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_engry"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableTop="@drawable/energy_press"
+                            android:gravity="center"
+                            android:text="节能"
+                            android:textColor="@color/color_seleter"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_balanle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableTop="@drawable/nomal_press"
+                            android:gravity="center"
+                            android:text="标准"
+                            android:textColor="@color/color_seleter"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_auto"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableTop="@drawable/super_press"
+                            android:gravity="center"
+                            android:text="均衡"
+                            android:textColor="@color/color_seleter"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_super"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableTop="@drawable/bance_press"
+                            android:gravity="center"
+                            android:text="超强"
+                            android:textColor="@color/color_seleter"
+                            android:textSize="13sp" />
+
+
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@mipmap/shape" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/info"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@mipmap/icon_microphone"
+                    android:padding="0dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/voice"
+                    android:text="导航语音"
+                    android:textColor="@color/color_tv"
+                    android:textSize="13sp" />
+
+                <com.shdnxc.cn.activity.view.SwitchButton
+                    android:id="@+id/nav_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:sb_button_color="@color/color_deep_blue"
+                    app:sb_checked="true"
+                    app:sb_checked_color="#3B92E2"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@mipmap/shape" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/lan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@mipmap/icon_light"
+                    android:padding="0dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/lan"
+                    android:text="开/关机"
+                    android:textColor="@color/color_tv"
+                    android:textSize="13sp" />
+
+                <com.shdnxc.cn.activity.view.SwitchButton
+                    android:id="@+id/light_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:sb_button_color="@color/color_deep_blue"
+                    app:sb_checked="true"
+                    app:sb_checked_color="#3B92E2"
+                    app:sb_show_indicator="false" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@mipmap/shape" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/re_tips_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@mipmap/background"
+            android:visibility="invisible"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_tips_show2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_select3"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/tv_content_tips"
+                android:gravity="center"
+                android:text="提示"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_content_tips"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="设置为当前主题"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_cotentt_tips"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_content_tips"
+                android:src="@mipmap/shape" />
+
+            <TextView
+                android:id="@+id/tv_tips_sure"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/iv_cotentt_tips"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#6AA8FD"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

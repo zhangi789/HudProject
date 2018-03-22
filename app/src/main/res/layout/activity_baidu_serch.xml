@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_serch"
+        layout="@layout/include_baidu_serch"></include>
+
+    <!-- <RelativeLayout
+         android:layout_below="@+id/include_serch"
+         android:layout_width="match_parent"
+
+         android:layout_height="wrap_content">
+         <RelativeLayout android:id="@+id/top"
+             android:layout_width="fill_parent"
+             android:layout_alignParentTop="true"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:background="@drawable/top_background"
+             android:layout_height="wrap_content">
+
+             <Button android:id="@+id/btnSearch"
+                 android:layout_width="wrap_content"
+                 android:layout_height="30dp"
+                 android:gravity="center"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:textSize="12sp"
+                 android:textStyle="bold"
+                 android:text="搜索"/>
+             <RelativeLayout
+                 android:id="@+id/rlSearchFrameDelete"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:gravity="center_vertical"
+              >
+
+                 <EditText android:id="@+id/etSearch"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:singleLine="true"
+                     android:background="@drawable/search_frame"
+                     android:layout_marginRight="10dp"
+                     android:paddingLeft="32dp"
+                     android:textSize="12sp"
+                     android:hint="请输入文字..."/>
+
+                 <ImageView android:id="@+id/ivDeleteText"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/delete"
+                     android:layout_centerInParent="true"
+                     android:paddingRight="20dp"
+                     android:visibility="visible"/>
+
+             </RelativeLayout>
+
+
+         </RelativeLayout>
+
+
+
+
+     </RelativeLayout>
+ -->
+    <com.shdnxc.cn.activity.view.SearchEditText
+        android:id="@+id/edit_serect"
+        style="@style/editTextStyle"
+        android:layout_below="@+id/include_serch"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lv_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_serect"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"></ListView>
+
+    <com.shdnxc.cn.activity.view.SpinnerLoading
+        android:id="@+id/spinner_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

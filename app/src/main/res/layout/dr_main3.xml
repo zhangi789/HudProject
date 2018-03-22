@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/dr_header_view"></include>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_mac"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/ivs1"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_equipment"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs1"
+            android:text="我的设备"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_mac"
+        android:id="@+id/rl_app"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/ivs2"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting_small"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs2"
+            android:text="APP设置"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_app"
+        android:id="@+id/rl_theme"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivs3"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_theme"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs3"
+            android:text="主题管理"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_theme"
+        android:id="@+id/rl_msg"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivs4"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs4"
+            android:text="消息中心"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_msg"
+        android:id="@+id/rl_back"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivs5"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_feedback"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs5"
+            android:text="意见反馈"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_back"
+        android:id="@+id/rl_min"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivs6"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_about_us"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs6"
+            android:text="关于我们"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_hepe"
+        android:layout_below="@+id/rl_min"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivs7"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_help_center"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs7"
+            android:text="帮助中心"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/re_back_login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/ivs8"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_sign_out"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivs8"
+            android:text="退出登录"
+            android:textSize="14sp"
+            android:textColor="#0d2142"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shape" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8">
+        <RelativeLayout
+
+            android:id="@+id/rl_mac"
+            style="@style/reIV">
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/style1IV"
+                android:text="我的设备"></TextView>
+
+            <ImageView style="@style/sytyle2IV" />
+
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/rl_app"
+            style="@style/reIV">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/style1IV"
+                android:text="APP设置"></TextView>
+
+
+            <ImageView style="@style/sytyle2IV" />
+
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/rl_theme"
+            style="@style/reIV">
+
+            <TextView
+
+                style="@style/style1IV"
+                android:text="主题设置"></TextView>
+
+            <ImageView style="@style/sytyle2IV" />
+
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            style="@style/reIV">
+
+            <TextView
+
+                style="@style/style1IV"
+                android:text="消息中心"></TextView>
+
+            <ImageView style="@style/sytyle2IV" />
+
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            style="@style/reIV">
+
+            <TextView
+                style="@style/style1IV"
+                android:text="意见反馈"></TextView>
+
+            <ImageView style="@style/sytyle2IV" />
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/rl_min"
+            style="@style/reIV">
+
+            <TextView
+
+                style="@style/style1IV"
+                android:text="关于我们"></TextView>
+
+            <ImageView style="@style/sytyle2IV" />
+
+        </RelativeLayout>
+
+        <ImageView style="@style/sytyle3IV" />
+
+        <RelativeLayout
+            android:id="@+id/re_back_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="退出登录"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_tv"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+       &lt;!&ndash;     <TextView
+                style="@style/style1IV"
+                android:text="退出登录"></TextView>&ndash;&gt;
+
+        </RelativeLayout>
+
+    </LinearLayout>
+-->
+
+</LinearLayout>

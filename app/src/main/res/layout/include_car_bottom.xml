@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+       android:id="@+id/re_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/voicePic"
+            android:src="@mipmap/ic_hud_voice"
+            />
+        <TextView
+            android:layout_marginLeft="68dp"
+            android:text="语音控制"
+            android:layout_below="@id/voicePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_baidu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/baiduPic"
+            android:src="@mipmap/ic_hud_nav"
+            />
+
+        <TextView
+            android:layout_marginLeft="85dp"
+            android:text="百度导航"
+            android:layout_below="@id/baiduPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

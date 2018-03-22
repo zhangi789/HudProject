@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/voice_set_small"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/voice_small" />
+
+        <ProgressBar
+            android:id="@+id/voice_set_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/voice_set_big"
+            android:layout_toRightOf="@id/voice_set_small" />
+
+        <ImageView
+            android:id="@+id/voice_set_big"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/voice_big" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+      <!--  <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/search_button"
+           ></RadioButton>-->
+        <RadioButton
+            android:id="@+id/rBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/briii"
+            android:background="@null"
+            android:button="@null"
+
+            android:text="节能"
+            />
+        <RadioButton
+            android:id="@+id/rBtn2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/briii"
+            android:background="@null"
+            android:button="@null"
+            android:text="男性"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:drawableTop="@drawable/briii"
+            android:id="@+id/rBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:button="@null"
+
+            android:text="节能"
+            />
+
+        <RadioButton
+            android:id="@+id/rBtn4"
+            android:drawableTop="@drawable/briii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+
+            android:text="节能"
+            />
+        <RadioButton
+            android:id="@+id/rBtn5"
+            android:drawableTop="@drawable/briii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+
+            android:text="节能"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_sigle3"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#556D93"
+    android:visibility="invisible">
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@mipmap/shape" />
+
+    <TextView
+        android:layout_below="@+id/iv_start"
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="              "
+        android:textColor="@color/color_tv"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/iv5"
+        android:layout_toRightOf="@+id/tv_code"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="未查询到任何数据"
+        android:textColor="#E66565"
+        android:textSize="16sp" />
+
+
+    <!-- <item name="android:layout_centerVertical">true</item>
+     <item name="android:layout_alignParentRight">true</item>
+     <item name="android:layout_width">wrap_content</item>
+     <item name="android:layout_height">wrap_content</item>
+     <item name="android:src">@mipmap/ic_more2x</item>
+     -->
+    <!--  <ImageView
+
+          android:id="@+id/iv5"
+
+
+          />
+
+         &lt;!&ndash; style="@style/sytyle2IV" &ndash;&gt;/>-->
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16sp"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_more2x" />
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.shdnxc.cn.activity.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/activity_title"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btn_auto_conn"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cricle_scan"
+            android:text="手动连接"
+            android:textColor="@color/color_tv" />
+
+        <RelativeLayout
+            android:id="@+id/re_camere_scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="#ffffff"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--     <Button
+                         android:id="@+id/btn_auto"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginRight="12dp"
+                         android:layout_alignParentRight="true"
+                         android:visibility="visible"
+                         android:background="@drawable/cricle_back"
+                         android:text="返回"
+                         android:textColor="@color/result_view" />-->
+                <TextView
+
+                    android:id="@+id/tv_camere_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="请长按HUD+-键5秒，再根据二维码下方的数字输入"
+                    android:textColor="@color/result_view"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_camere"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_camere_tips"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="首次全部输入，以后黑色部分可以选择输入"
+                    android:textColor="@color/result_view"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/tv_camere"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="* * * *"
+                        android:textColor="#c0ed3704"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="* * * *"
+                        android:textColor="#c0ed3704"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="* * * *"
+                        android:textColor="@color/result_view"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="* * * *"
+                        android:textColor="@color/result_view"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="* * * *"
+                        android:textColor="@color/result_view"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_tv_info"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:theme="@style/devicestyle">
+
+                        <EditText
+                            android:id="@+id/edit_hud_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入八位橙色，不区分大小写"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColor="@color/color_tv"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_add_hud"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/cricle_back"
+                        android:text="绑定设备"
+                        android:textColor="@color/result_view"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_msg_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/ll_tv_msg"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="请选择黑色部分12位"
+                    android:textColor="@color/result_view"
+                    android:textSize="14sp" />
+
+                <ListView
+                    android:id="@+id/lv_device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_msg_info"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"></ListView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

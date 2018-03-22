@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义圆形图片-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <!--自定义控件进度条-->
+    <attr name="bgColor" format="color" />
+    <attr name="fgColor" format="color" />
+    <attr name="percent" format="float" />
+    <attr name="startAngle" format="float" />
+    <declare-styleable name="ProgressView">
+        <attr name="bgColor" />
+        <attr name="fgColorStart" format="color" />
+        <attr name="fgColorEnd" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="percent" />
+        <attr name="startAngle" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleSeekBar">
+        <attr name="bsb_min" format="integer|reference" />
+        <attr name="bsb_max" format="integer|reference" />
+        <attr name="bsb_progress" format="integer|reference" />
+        <attr name="bsb_track_size" format="dimension|reference" />
+        <attr name="bsb_second_track_size" format="dimension|reference" />
+        <attr name="bsb_thumb_radius" format="dimension|reference" />
+        <attr name="bsb_thumb_radius_on_dragging" format="dimension|reference" />
+        <attr name="bsb_section_count" format="integer|reference" />
+        <attr name="bsb_thumb_color" format="color|reference" />
+        <attr name="bsb_track_color" format="color|reference" />
+        <attr name="bsb_second_track_color" format="color|reference" />
+        <attr name="bsb_show_section_text" format="boolean" />
+        <attr name="bsb_section_text_size" format="dimension|reference" />
+        <attr name="bsb_section_text_color" format="color|reference" />
+        <attr name="bsb_section_text_position">
+            <enum name="sides" value="0" />
+            <enum name="bottom_sides" value="1" />
+            <enum name="below_section_mark" value="2" />
+        </attr>
+        <attr name="bsb_section_text_interval" format="integer" />
+        <attr name="bsb_show_thumb_text" format="boolean" />
+        <attr name="bsb_thumb_text_size" format="dimension|reference" />
+        <attr name="bsb_thumb_text_color" format="color|reference" />
+        <attr name="bsb_bubble_color" format="color|reference" />
+        <attr name="bsb_bubble_text_size" format="dimension|reference" />
+        <attr name="bsb_bubble_text_color" format="color|reference" />
+        <attr name="bsb_show_section_mark" format="boolean" />
+        <attr name="bsb_auto_adjust_section_mark" format="boolean" />
+        <attr name="bsb_show_progress_in_float" format="boolean" />
+        <attr name="bsb_anim_duration" format="integer" />
+        <attr name="bsb_touch_to_seek" format="boolean" />
+        <attr name="bsb_seek_by_section" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="outCircleColor" format="color"></attr>
+        <attr name="inCircleColor" format="color"></attr>
+        <attr name="progressColor" format="color"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="textBold" format="boolean"></attr>
+        <attr name="lineWidth" format="dimension"></attr>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension" />
+
+        <attr name="loadingColor" format="color" />
+
+        <attr name="stopColor" format="color" />
+
+        <attr name="radius" format="dimension" />
+
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PercentRelativeLayout">
+        <attr name="scale" format="float" />
+    </declare-styleable>
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_search_select</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+    <declare-styleable name="SpinnerLoading">
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_color_move" format="color"/>
+    </declare-styleable>
+</resources>

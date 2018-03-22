@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+
+        layout="@layout/include_foget"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_border">
+
+        <EditText
+            android:id="@+id/edit_for_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:maxLength="11"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/re_input_iphone"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_phone_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_delete" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_border">
+
+        <EditText
+            android:id="@+id/edit_for_yan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/re_input_yan"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/re_input_yan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_line">
+
+            <ImageView
+                android:id="@+id/iv_yan_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_delete" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_send_yan"
+            android:background="#577498" />
+
+        <Button
+            android:id="@+id/tv_send_yan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/color_tv" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_border">
+
+        <EditText
+            android:id="@+id/edit_for_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="设置新密码，6-16位字符，区分大小写"
+            android:maxLength="16"
+            android:password="true"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/re_input_new_pwd"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_pwd_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_delete" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#577498"
+        android:text="重置密码"
+        android:textColor="#FEFFF5"
+        android:textSize="18sp" />
+</LinearLayout>

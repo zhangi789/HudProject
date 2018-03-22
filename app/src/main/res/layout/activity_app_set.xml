@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/background"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/info"
+        layout="@layout/toor_head_back"></include>
+
+ <!--   <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shape" />-->
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="接收推送消息"
+            android:textColor="@color/color_tv"
+            android:textSize="14sp" />
+
+        <com.shdnxc.cn.activity.view.SwitchButton
+            android:id="@+id/msg_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            app:sb_button_color="@color/color_deep_blue"
+            app:sb_checked="false"
+            app:sb_checked_color="#3B92E2"
+            app:sb_show_indicator="false" />
+
+    </RelativeLayout>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shape" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="保持屏幕常亮"
+            android:textColor="@color/color_tv"
+            android:textSize="14sp" />
+
+        <com.shdnxc.cn.activity.view.SwitchButton
+            android:id="@+id/light_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            app:sb_button_color="@color/color_deep_blue"
+            app:sb_checked="true"
+            app:sb_checked_color="#3B92E2"
+            app:sb_show_indicator="false" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shape" />
+</LinearLayout>

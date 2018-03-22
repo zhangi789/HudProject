@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_window_focused="false"
+        android:drawable="@mipmap/ic_detection_chassis_normal" />
+    <item android:state_checked="false" android:state_window_focused="false"
+        android:drawable="@mipmap/ic_detection_chassis_press" />
+
+    <item android:drawable="@mipmap/ic_detection_chassis_normal" android:state_checked="false" />
+    <item android:drawable="@mipmap/ic_detection_chassis_press" android:state_checked="true" />
+    <!-- 默认时的背景图片-->
+
+    <!--<item android:drawable="@mipmap/ic_detection_chassis_normal" />
+
+    &lt;!&ndash; 没有焦点时的背景图片&ndash;&gt;
+
+    <item android:state_window_focused="false" android:drawable="@mipmap/ic_detection_chassis_normal" />
+
+    &lt;!&ndash; 非触摸模式下获得焦点并单击时的背景图片&ndash;&gt;
+
+    <item android:state_focused="true" android:state_pressed="true"
+
+        android:drawable="@mipmap/ic_detection_chassis_press" />
+
+    &lt;!&ndash; 触摸模式下单击时的背景图片&ndash;&gt;
+
+    <item android:state_focused="false" android:state_pressed="true"
+
+        android:drawable="@mipmap/ic_detection_chassis_press" />-->
+
+    <!-- 选中时的图片背景
+
+     <item android:state_selected="true" android:drawable="@drawable/pic4" />
+
+     &lt;!&ndash;获得焦点时的图片背景&ndash;&gt;
+
+     <item android:state_focused="true" android:drawable="@drawable/pic5" />-->
+
+
+</selector>

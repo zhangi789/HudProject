@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bnav_newer_guide_dialog">#cc000000</color>
+    <color name="nsdk_color_common_black">#ff3f484b</color>
+    <color name="nsdk_color_route_detail_common_text">#7a7c80</color>
+    <color name="nsdk_common_rd_start_navi_inner_normal">#3477eb</color>
+    <color name="nsdk_common_rd_start_navi_inner_press">#2e6bd3</color>
+    <color name="nsdk_route_detial_analog_start_navi_text">#313233</color>
+    <color name="nsdk_route_detial_analog_start_navi_text_night">#969bc6</color>
+    <color name="nsdk_route_detail_line">#dfe2e3</color>
+    <color name="nsdk_route_detail_line_night">#31364a</color>
+    <color name="common_list_divide_color">#c8c8c8</color>
+
+    <!-- listItem颜色 -->
+    <color name="list_item_normal">#e8e8e8</color>
+    <color name="list_item_pressed">#d3d3d3</color>
+    <color name="navi_dialog_high_light">#ff3477eb</color>
+    <drawable name="transparent">#00000000</drawable>
+
+    <!-- 车载模式 -->
+    <color name="carmode_common_search_result_child_bg">#1d2026</color>
+    <color name="carmode_common_divide_line">#2e333c</color>
+    <color name="carmode_common_main_text">#a5aec3</color>
+    <color name="carmode_common_second_text">#787d8c</color>
+    <color name="carmode_titlebar_intput_bg">#373c44</color>
+    <color name="carmode_titlebar_bg">#1d2026</color>
+    <color name="carmode_titlebar_btn_bg">#2e333c</color>
+    <color name="carmode_titlebar_btn_pressed_bg">#424955</color>
+    <color name="carmode_titlebar_text_bg">#a5aec3</color>
+    <color name="carmode_titlebar_text_bg_blue">#36bfff</color>
+    <color name="carmode_titlebar_text_pressed_bg">#ffffff</color>
+    <color name="carmode_titlebar_input_hint">#787d8c</color>
+    <color name="carmode_titlebar_title">#a5aec3</color>
+    <color name="carmode_text_main_color">#a5aec3</color>
+    <color name="carmode_text_second_color">#787d8c</color>
+    <color name="carmode_home_bg">#23262d</color>
+    <color name="carmode_home_text">#a5aec3</color>
+    <color name="carmode_offline_title_text_pressed">#a5aec3</color>
+    <color name="carmode_offline_title_text_normal">#787d8c</color>
+    <color name="carmode_offline_item_text">#a5aec3</color>
+    <color name="carmode_offline_status_text">#36bfff</color>
+    <color name="carmode_offline_diskpace_text">#1e2127</color>
+    <color name="carmode_track_info_text">#787d8c</color>
+    <color name="carmode_line">#2e333c</color>
+    <color name="carmode_blue_text">#36bfff</color>
+    <!-- <color name="carmode_poi_start_poi_layout_bg">#36bfff</color> -->
+
+    <!-- POI搜索结果页 -->
+
+    <color name="poi_result_layout_background">#faffffff</color>
+    <drawable name="poi_dragon">#f8f8f8</drawable>
+    <drawable name="poi_dragon_night">#f8f8f8</drawable>
+    <color name="carmode_poig_dialog_bg">#b0000000</color>
+    <color name="carmode_xheaderview_color">#36bfff</color>
+    <color name="search_sort_selected_text_color">#3477ef</color>
+    <color name="search_sort_unselected_text_color">#49526f</color>
+
+    <drawable name="bnav_common_bg_pressed_mask">#dfdfdf</drawable>
+    <drawable name="bnav_common_bg_pressed_mask_night">#161a2a</drawable>
+    <drawable name="bnav_common_bg_mask_night">#23262d</drawable>
+    <color name="bnav_common_child_bg">#f6f6f6</color>
+    <color name="bnav_common_child_bg_night">#f6f6f6</color>
+    <color name="poi_search_text">#008df2</color>
+    <color name="poi_search_default_text">#262626</color>
+    <color name="poi_search_line">#bfbfbf</color>
+
+    <!-- POI详情页背景颜色 -->
+    <color name="coloer_nomal">#1F96F2</color>
+    <color name="coloer_press">#FF5165</color>
+    <color name="common_black">#ff3f484b</color>
+    <color name="poi_gonavi">#4992ff</color>
+    <color name="poi_gonavi_night">#3477eb</color>
+    <color name="poi_distance">#4992ff</color>
+    <color name="poi_distance_night">#3477eb</color>
+    <color name="poi_item">#abaeb2</color>
+    <color name="poi_item_night">#808394</color>
+    <color name="poi_num">#7a7c80</color>
+    <color name="poi_num_night">#65678a</color>
+    <color name="poi_line_night">#dddddd</color>
+    <color name="poi_line">#dddddd</color>
+    <color name="poi_detail_addr">#ff7d8487</color>
+    <color name="poi_detail_addr_night">#ff7d8487</color>
+    <color name="carmode_poi_line">#2c334c</color>
+    <color name="carmode_btn_blue_bg_normal">#36bfff</color>
+    <color name="carmode_btn_blue_bg_pressed">#0091d7</color>
+    <color name="poi_city_list_title">#ff333333</color>
+
+    <!-- 离线数据 -->
+    <color name="nsdk_color_od_bg_progressbar_blue">#ff24a6ff</color>
+    <color name="nsdk_color_od_home_card_text">#697377</color>
+    <color name="nsdk_color_od_home_card_text_night">#697377</color>
+    <color name="nsdk_color_od_bg_list_transparent">#00ffffff</color>
+    <color name="nsdk_color_od_bg_list_test">#ffff0000</color>
+    <color name="color_alpha">#ffffff</color>
+    <color name="nsdk_color_dialog_content_text">#313233</color>
+    <color name="nsdk_color_dialog_content_text_night">#969bc6</color>
+
+    <color name="nsdk_color_dialog_cancel_sure_text">#313233</color>
+    <color name="nsdk_color_dialog_cancel_sure_text_night">#969bc6</color>
+
+    <color name="nsdk_color_dialog_other_btn_text">#3477eb</color>
+
+    <color name="nsdk_color_list_section_color">#ffcacaca</color>
+    <color name="nsdk_color_download_list_press">#d9d9d9</color>
+    <color name="nsdk_color_download_list_def">#f1f1f1</color>
+    <color name="nsdk_color_downloaded">#808080</color>
+    <color name="nsdk_color_downloading">#2483dd</color>
+    <color name="nsdk_color_download_normal">#323232</color>
+    <color name="nsdk_color_download_newversion">#ff3235</color>
+    <color name="nsdk_color_download_suspend">#ffe6b317</color>
+    <color name="nsdk_color_download_error">#ffe6b317</color>
+
+    <color name="nsdk_color_setting_list_item_text_main">#3e3e3e</color>
+    <color name="nsdk_color_setting_list_item_text_main_night">#b3bac0</color>
+    <color name="nsdk_color_setting_list_item_text_sub">#a1a1a1</color>
+    <color name="nsdk_color_setting_list_item_text_sub_night">#5e6367</color>
+    <color name="bnav_rp_tc_title_scheme_name">#ff000000</color>
+    <color name="bnav_rp_tc_title_scheme_name_night">#ffffffff</color>
+
+
+    <color name="nsdk_default_title_text_normal">#ffffffff</color>
+    <color name="nsdk_default_title_text_normal_night">#ff969bc6</color>
+    <color name="nsdk_default_title_text_press">#ff60b2ff</color>
+    <color name="nsdk_default_title_text_press_night">#ff161a2a</color>
+
+    <color name="bnav_rp_od_bg_text_color">#49526f</color>
+    <color name="bnav_rp_od_bg_text_color_night">#808394</color>
+    <color name="bnav_rp_od_bg_color">#f4f4f4</color>
+    <color name="bnav_rp_od_bg_color_night">#161a2a</color>
+
+    <color name="bnav_rp_od_bg_bottom_status">#fff4f4f4</color>
+    <color name="bnav_rp_od_bg_bottom_status_night">#ff161a2a</color>
+    <color name="bnav_rp_od_bg_bottom_info">#ffabaeb2</color>
+    <color name="bnav_rp_od_bg_bottom_info_night">#ff808394</color>
+    <color name="common_list_bg_color">#ffffff</color>
+    <color name="common_list_bg_color_night">#1e2336</color>
+    <!-- 路线概览页 -->
+    <color name="nsdk_rp_bg_list_item_pressed">#ffd9dcdf</color>
+    <color name="nsdk_rp_bg_list_item_pressed_night">#ff33373a</color>
+    <color name="nsdk_rp_tc_title_scheme_name">#ff000000</color>
+    <color name="nsdk_rp_tc_title_scheme_name_night">#ffffffff</color>
+    <color name="nsdk_rp_tc_list_scheme_name">#ff333333</color>
+    <color name="nsdk_rp_tc_list_scheme_name_night">#ffb2bdc1</color>
+
+    <!-- 设置页按钮 -->
+    <color name="nsdk_statusbutton_tc_default_night">#969bc6</color>
+    <color name="nsdk_statusbutton_tc_pressed_night">#1e2336</color>
+    <color name="nsdk_statusbutton_tc_pressed">#ffffffff</color>
+    <color name="nsdk_statusbutton_tc_default">#ffafafaf</color>
+
+    <!-- 路线详情显示控件 -->
+    <color name="nsdk_route_detial_none">#007aff</color>
+    <color name="nsdk_route_detial_clear">#4cd964</color>
+    <color name="nsdk_route_detial_normal">#ffcc00</color>
+    <color name="nsdk_route_detial_crowed">#ff3b30</color>
+    <color name="nsdk_route_detial_snail">#ce2507</color>
+
+    <color name="nsdk_cruise_bg_bar">#ffffff</color>
+    <color name="nsdk_cruise_bg_bar_night">#2e3242</color>
+    <color name="nsdk_cruise_text_road_title">#3477ea</color>
+    <color name="nsdk_cruise_text_road_title_night">#7a85b0</color>
+    <color name="nsdk_cruise_text_road_name">#2e3242</color>
+    <color name="nsdk_cruise_text_road_name_night">#ffffff</color>
+    <color name="nsdk_cruise_text_main">#ffffff</color>
+    <color name="nsdk_cruise_text_assis">#7a85b0</color>
+    <color name="nsdk_cruise_mask">#80000000</color>
+    <color name="nsdk_cruise_satellite_text_red">#d94a4b</color>
+
+    <color name="nsdk_route_detial_text_main_focuse">#3477eb</color>
+    <color name="nsdk_route_detial_text_main_unfocus">#313233</color>
+    <color name="nsdk_route_detial_text_main_unfocus_night">#969bc6</color>
+    <color name="nsdk_route_detial_text_sub_unfocus">#7a7c80</color>
+    <color name="nsdk_route_detial_text_sub_unfocus_night">#808394</color>
+
+    <color name="nsdk_route_detial_preference_focus">#3477eb</color>
+    <color name="nsdk_route_detial_preference_unfocus">#313233</color>
+
+    <color name="nsdk_route_detial_preference_btn">#3477eb</color>
+    <color name="nsdk_route_plan_preference_text">#313233</color>
+    <color name="nsdk_route_plan_preference_text_night">#969bc6</color>
+    <color name="nsdk_route_plan_preference_disable_text">#abaeb2</color>
+    <color name="nsdk_route_plan_preference_disable_text_night">#808394</color>
+    <color name="nsdk_route_plan_preference_background">#edeff2</color>
+    <color name="nsdk_route_plan_preference_background_night">#161a2a</color>
+    <color name="nsdk_route_plan_preference_foreground">#ffffff</color>
+    <color name="nsdk_route_plan_preference_foreground_night">#1e2336</color>
+    <color name="nsdk_route_plan_preference_carmode">#23262d</color>
+
+    <color name="nsdk_route_detial_drive_data_line">#3477eb</color>
+    <color name="nsdk_route_detial_drive_max">#fd8383</color>
+    <color name="nsdk_route_detial_drive_min">#84edba</color>
+    <color name="nsdk_route_detial_drive_text">#7a7c80</color>
+    <color name="nsdk_route_detial_drive_axix">#dddddd</color>
+    <color name="nsdk_route_detial_drive_axix_night">#2c344b</color>
+    <color name="nsdk_route_detial_drive_inner">#ff3477eb</color>
+    <color name="nsdk_route_detial_drive_inner_transparent">#003477eb</color>
+    <color name="nsdk_route_detial_drive_title">#313233</color>
+    <color name="nsdk_route_detial_drive_title_night">#808394</color>
+
+    <!-- 
+    <drawable name="nsdk_route_preferencd_item_normal">#ffffff</drawable>
+    <drawable name="nsdk_route_preferencd_item_press">#dfdfdf</drawable>
+     -->
+    <color name="nsdk_route_detial_panel">#ffffff</color>
+    <color name="nsdk_route_detial_panel_night">#1e2336</color>
+    <color name="nsdk_route_detial_outline_panel">#ffffff</color>
+    <color name="nsdk_route_detial_outline_panel_night">#161a2a</color>
+    <color name="nsdk_route_detial_divider">#dddddd</color>
+    <color name="nsdk_route_detial_divider_night">#2c344b</color>
+
+    <color name="carmode_list_child_bg_color">#191c20</color>
+    <color name="carmode_list_bg_press_color">#444a55</color>
+    <color name="carmode_list_bg_color">#23262d</color>
+
+    <!-- 导航中 v4.0 -->
+    <color name="nsdk_rg_top_panel">#2e3242</color>
+    <color name="nsdk_rg_top_panel_night">#2e3242</color>
+    <color name="nsdk_rg_main_info">#ffffff</color>
+    <color name="nsdk_rg_main_info_night">#ffffff</color>
+    <color name="nsdk_rg_second_info">#7a85b0</color>
+    <color name="nsdk_rg_second_info_night">#7a85b0</color>
+    <color name="nsdk_rg_second_text_info">#ffffff</color>
+    <color name="nsdk_rg_fullview_continue_nav">#3477eb</color><!-- 横屏 -->
+    <color name="nsdk_rg_total_dist_time_text">#ffffff</color><!-- 横屏 -->
+    <color name="nsdk_rg_cp_bottom_panel">#ffffff</color>
+    <color name="nsdk_rg_cp_bottom_panel_night">#2e3242</color>
+    <color name="nsdk_rg_cp_fullview_text">#3477ea</color>
+    <color name="nsdk_rg_cp_fullview_text_night">#7a85b0</color>
+    <color name="nsdk_rg_cp_total_dist_time_text">#313233</color>
+    <color name="nsdk_rg_cp_total_dist_time_text_night">#ffffff</color>
+    <color name="nsdk_rg_assist_normal_speed">#3477eb</color>
+    <color name="nsdk_rg_assist_normal_speed_night">#3477eb</color>
+    <color name="nsdk_rg_assist_over_speed">#ff0000</color>
+    <color name="nsdk_rg_assist_over_speed_night">#ff0000</color>
+    <color name="nsdk_rg_assist_limit_speed">#000000</color>
+    <color name="nsdk_rg_assist_limit_speed_night">#ff0000</color>
+    <color name="nsdk_rg_hw_service_info">#ffffff</color>
+    <color name="nsdk_rg_hw_service_info_night">#ffffff</color>
+    <color name="nsdk_rg_hw_service_panel">#55000000</color>
+    <color name="nsdk_rg_hw_service_panel_night">#55000000</color>
+    <color name="nsdk_string_rg_rpc_text_overmax_color">#FF0000</color>
+    <color name="nsdk_string_rg_rpc_text_content">#ff808080</color>
+    <color name="nsdk_string_rg_comment_dialog_title">#ff333333</color>
+    <color name="nsdk_string_rg_comment_dialog_title_night">#ff676774</color>
+    <color name="nsdk_string_rg_comment_dialog_content">#ff7a7c80</color>
+    <color name="nsdk_string_rg_comment_dialog_content_night">#ff676774</color>
+    <color name="nsdk_rg_menu_panel">#ffffff</color>
+    <color name="nsdk_rg_menu_panel_night">#1e2336</color>
+    <color name="nsdk_rg_menu_panel_h_line">#2c334c</color>
+    <color name="nsdk_rg_cp_anolog_navi">#3477ea</color>
+    <color name="nsdk_rg_cp_anolog_navi_night">#7a85b0</color>
+    <color name="nsdk_rg_quit_navi_add_integral">#3477eb</color>
+    <color name="nsdk_rg_quit_navi_add_integral_night">#3477eb</color>
+    <color name="nsdk_rg_quit_navi_integral_default">#313233</color>
+    <color name="nsdk_rg_quit_navi_integral_default_night">#676774</color>
+    <color name="poi_name">#313233</color>
+    <color name="poi_name_night">#969bc6</color>
+    <color name="poi_addr">#abaeb2</color>
+    <color name="poi_addr_night">#808394</color>
+    <color name="bnav_common_bg">#faffffff</color>
+    <color name="bnav_common_bg_night">#1e2336</color>
+    <color name="nsdk_rg_common_view_bg">#b2000000</color>
+    <color name="nsdk_rg_hud_second_info">#80ffffff</color>
+    <!-- 导航中 v4.0 end -->
+
+    <!-- titlebar -->
+    <color name="bnav_titlebar_bg">#3477eb</color>
+    <color name="bnav_titlebar_bg_night">#161a2a</color>
+    <color name="bnav_titlebar_middle_text">#ffffff</color>
+    <color name="bnav_titlebar_middle_text_night">#969bc6</color>
+    <color name="bnav_feedback_text_overmax_color">#FF0000</color>
+    <color name="bnav_feedback_text_AboutButtonText">#ff808080</color>
+    <color name="bnav_feedback_text_Hint">#ffabaeb2</color>
+    <color name="bnav_feedback_text_Hint_night">#ff666666</color>
+    <color name="bnav_vomit_text_checked">#4992ff</color>
+    <color name="bnav_vomit_text_checked_night">#969bc6</color>
+    <color name="bnav_vomit_text_unchecked">#abaeb2</color>
+    <color name="bnav_vomit_text_unchecked_night">#808394</color>
+
+    <color name="bnav_feedback_text_edit">#ff666666</color>
+    <color name="bnav_feedback_text_edit_night">#ffabaeb2</color>
+
+    <!-- 目的地停车场 -->
+    <color name="nsdk_rg_park_item_focus">#cc3477eb</color>
+    <color name="nsdk_rg_park_item_unfocus">#cc000000</color>
+    <color name="nsdk_rg_common_line_night">#2c334c</color>
+    <color name="nsdk_rg_common_line">#dddddd</color>
+    <color name="nsdk_rg_menu_text_color">#313233</color>
+    <color name="nsdk_rg_menu_text_color_night">#969bc6</color>
+    <color name="nsdk_rg_menu_category_text_color">#abaeb2</color>
+    <color name="nsdk_rg_menu_category_text_color_night">#808394</color>
+    <color name="nsdk_rg_menu_category_text_bg_color">#f4f4f4</color>
+    <color name="nsdk_rg_menu_category_text_bg_color_night">#161a2a</color>
+    <color name="nsdk_rg_menu_category_color">#f2f2f2</color>
+    <color name="nsdk_rg_menu_category_color_night">#161a2a</color>
+    <color name="nsdk_rg_park_detail_title">#313233</color>
+    <color name="nsdk_rg_park_detail_title_night">#969bc6</color>
+    <color name="nsdk_rg_park_detail_sub_title">#7a7c80</color>
+    <color name="nsdk_rg_park_detail_sub_title_night">#64678a</color>
+    <color name="nsdk_rg_park_detail_panel">#ffffff</color>
+    <color name="nsdk_rg_park_detail_panel_night">#1e2336</color>
+    <color name="nsdk_rg_park_detail_main">#49526f</color>
+    <color name="nsdk_rg_park_poi_line_night">#2c334c</color>
+    <color name="nsdk_rg_park_poi_line">#dddddd</color>
+    <color name="nsdk_rg_park_poi_info_blue">#3385ff</color>
+    <color name="nsdk_rg_park_index">#abaeb2</color>
+    <color name="nsdk_rg_park_index_night">#64678a</color>
+    <color name="nsdk_rg_navi_frame">#e1e1e1</color>
+    <color name="nsdk_rg_navi_frame_transparent">#00000000</color>
+    <color name="nsdk_rg_menu_catalog_text_color">#bfbfbf</color>
+    <color name="nsdk_rg_menu_catalog_text_color_night">#606880</color>
+    <color name="nsdk_rg_menu_view_text_color">#008df2</color>
+    <color name="nsdk_rg_menu_view_text_color_night">#0070bf</color>
+    <color name="nsdk_rg_menu_normal_view_text_color">#737373</color>
+    <color name="nsdk_rg_menu_normal_view_text_color_night">#7c87a6</color>
+    <color name="nsdk_rg_menu_close_view_color">#e1e4e5</color>
+    <color name="nsdk_rg_menu_close_view_color_night">#27304c</color>
+    <color name="nsdk_rg_menu_close_view_unselected">#e1e4e5</color>
+    <color name="nsdk_rg_menu_close_view_unselected_night">#27304c</color>
+    <color name="nsdk_rg_menu_close_view_selected">#d4d7d9</color>
+    <color name="nsdk_rg_menu_close_view_selected_night">#202840</color>
+
+    <!-- 个性化语音 -->
+    <color name="bnav_voice_square_loading_fail_text">#666666</color>
+    <color name="bnav_voice_square_loading_fail_background">#ebedf0</color>
+    <color name="bnav_voice_square_titlebar_right_text">#333333</color>
+    <color name="bnav_voice_square_titlebar_right_text_night">#333333</color>
+    <color name="nsdk_voice_common_background">#ffffff</color>
+    <color name="nsdk_voice_common_background_night">#191d2e</color>
+    <color name="nsdk_voice_color_title_bar_bg">#ffffff</color>
+    <color name="nsdk_voice_color_record_title_bar_bg">#333333</color>
+    <color name="nsdk_color_voice_title">#313233</color>
+    <color name="nsdk_voice_main_bootom_newrecord_bg">#333333</color>
+    <color name="nsdk_voice_main_bootom_newrecord_bg_night">#3477eb</color>
+    <color name="nsdk_voice_main_bootom_newrecord_bg_pressed">#3d3d3d</color>
+    <color name="nsdk_voice_main_bootom_newrecord_bg_pressed_night">#2e6bd3</color>
+    <color name="nsdk_voice_category_bg_color">#ecedf1</color>
+    <color name="nsdk_voice_category_bg_color_night">#191d2e</color>
+    <color name="nsdk_voice_category_text_color">#abaeb2</color>
+    <color name="nsdk_voice_category_text_color_night">#64678a</color>
+    <color name="nsdk_voice_main_text_name_color">#313233</color>
+    <color name="nsdk_voice_main_text_name_color_night">#969bc6</color>
+    <color name="nsdk_voice_main_text_size_color">#abaeb2</color>
+    <color name="nsdk_voice_main_text_size_color_night">#64678a</color>
+    <color name="nsdk_voice_main_text_use_color">#5bc153</color>
+    <color name="nsdk_voice_main_progress_bar_bg_color">#e2e3e5</color>
+    <color name="nsdk_voice_main_progress_bar_color">#3285ff</color>
+    <color name="nsdk_voice_main_progress_percent_color">#3385ff</color>
+    <color name="nsdk_voice_main_new_record_text_color">#3385ff</color>
+    <color name="nsdk_voice_main_new_record_text_color_night">#ffffff</color>
+    <color name="nsdk_voice_main_use_btn_text_color">#3285ff</color>
+    <color name="nsdk_voice_main_use_btn_text_color_night">#969bc6</color>
+    <color name="nsdk_voice_local_info_show_bg_color">#c7eafe</color>
+    <color name="nsdk_voice_local_info_show_bg_color_night">#def1ff</color>
+    <color name="nsdk_voice_local_info_bg_color">#f0f9ff</color>
+    <color name="nsdk_voice_local_info_bg_color_night">#191d2e</color>
+    <color name="nsdk_voice_local_edit_disable_color">#abaeb3</color>
+    <color name="nsdk_voice_local_edit_enable_color">#3385ff</color>
+    <color name="nsdk_voice_list_select_color">#e7f3fe</color>
+    <color name="nsdk_voice_list_select_color_night">#161a2a</color>
+    <color name="nsdk_voice_list_unselect_color">#ffffff</color>
+    <color name="nsdk_voice_list_unselect_color_night">#1e2336</color>
+    <color name="nsdk_voice_titlebar_disable_save_color">#abaeb3</color>
+    <color name="nsdk_voice_titlbar_pressed_save_bg_color">#d5d6d8</color>
+    <color name="nsdk_voice_titlbar_enable_save_bg_color">#00000000</color>
+    <color name="nsdk_voice_record_time_color">#ffffff</color>
+    <color name="nsdk_voice_record_time_alert_color">#cc3d3d</color>
+    <color name="nsdk_voice_record_voice_Record_detail">#ffabaeb2</color>
+    <color name="nsdk_voice_record_voice_Record_detail_night">#64678a</color>
+    <color name="nsdk_voice_record_voice_textview_voice_info_record">#ffffff</color>
+    <color name="nsdk_voice_record_voice_textview_voice_info">#abaeb2</color>
+    <color name="nsdk_voice_record_voice_textview_voice_info_night">#969bc6</color>
+
+    <color name="nsdk_carmode_voice_common_background">#23262d</color>
+    <color name="nsdk_carmode_voice_main_bootom_newrecord_bg">#36bfff</color>
+    <color name="nsdk_carmode_voice_main_bootom_newrecord_press_bg">#0091d7</color>
+    <color name="nsdk_carmode_voice_main_text_name_color">#a5aec3</color>
+    <color name="nsdk_carmode_voice_main_text_size_color">#787d8c</color>
+    <color name="nsdk_carmode_voice_category_text_color">#787d8c</color>
+    <color name="nsdk_carmode_voice_category_bg_color">#23262d</color>
+    <color name="nsdk_carmode_voice_main_text_used_color">#36bfff</color>
+    <color name="nsdk_carmode_voice_list_select_color">#444a55</color>
+    <color name="nsdk_carmode_voice_list_unselect_color">#23262d</color>
+    <color name="nsdk_carmode_common_divide_line">#2f333c</color>
+    <color name="nsdk_carmode_voice_local_info_bg_color">#23262d</color>
+    <color name="nsdk_carmode_voice_local_edit_disable_color">#a5aec3</color>
+    <color name="nsdk_carmode_voice_local_edit_enable_color">#36bfff</color>
+
+    <color name="nsdk_carmode_titlebar_intput_bg">#373c44</color>
+    <color name="nsdk_carmode_titlebar_bg">#1d2026</color>
+    <color name="nsdk_carmode_titlebar_btn_bg">#2e333c</color>
+    <color name="nsdk_carmode_titlebar_btn_pressed_bg">#424955</color>
+    <color name="nsdk_carmode_titlebar_text_bg">#a5aec3</color>
+    <color name="nsdk_carmode_titlebar_text_bg_blue">#36bfff</color>
+    <color name="nsdk_carmode_titlebar_text_pressed_bg">#ffffff</color>
+    <color name="nsdk_carmode_titlebar_input_hint">#787d8c</color>
+    <color name="nsdk_carmode_titlebar_title">#a5aec3</color>
+
+    <color name="route_custom_push_title_value">#313233</color>
+    <color name="route_custom_push_title_value_night">#969bc6</color>
+    <color name="carmode_offline_title_bg_pressed">#23262d</color>
+    <color name="carmode_offline_title_bg_normal">#1d2026</color>
+    <color name="common_bottom_text_blue_color">#3477ea</color>
+    <color name="route_custom_push_time_value">#3477eb</color>
+    <color name="common_list_main_text_color">#313233</color>
+    <color name="common_list_main_text_color_night">#969bc6</color>
+    <color name="common_list_second_text_color">#abaeb2</color>
+    <color name="common_list_second_text_color_night">#808394</color>
+    <color name="common_bottom_text_red_color">#db5959</color>
+    <color name="carmode_common_bg">#23262d</color>
+
+    <color name="cl_text_a">#262626</color>
+    <color name="cl_text_a_night">#99a6cc</color>
+    <color name="cl_text_b">#737373</color>
+    <color name="cl_text_b_night">#7c87a6</color>
+    <color name="cl_text_c">#bfbfbf</color>
+    <color name="cl_text_c_night">#606880</color>
+    <color name="cl_text_d">#d9d9d9</color>
+    <color name="cl_text_d_night">#434959</color>
+    <color name="cl_text_e">#ffffff</color>
+    <color name="cl_text_e_night">#acbae5</color>
+
+    <color name="cl_bg_a">#d4d7d9</color>
+    <color name="cl_bg_a_night">#a0ad14</color>
+    <color name="cl_bg_b">#e1e4e5</color>
+    <color name="cl_bg_b_night">#0f131f</color>
+    <color name="cl_bg_c">#edf0f2</color>
+    <color name="cl_bg_c_night">#141a29</color>
+    <color name="cl_bg_d">#ffffff</color>
+    <color name="cl_bg_d_night">#1a2033</color>
+    <color name="cl_bg_e">#001a33</color>
+    <color name="cl_bg_e_night">#0d2240</color>
+
+    <color name="cl_link_a">#008df2</color>
+    <color name="cl_link_a_night">#0070bf</color>
+    <color name="cl_link_b">#ff4040</color>
+    <color name="cl_link_b_night">#cc3333</color>
+
+
+    <drawable name="search_result_text_unfocused">#008df2</drawable>
+    <drawable name="search_result_text_focused">#0070bf</drawable>
+
+    <color name="cl_click_a">#007edf</color>
+    <color name="cl_click_a_night">#00616a</color>
+    <color name="cl_click_b">#e63939</color>
+    <color name="cl_click_b_night">#b22d2d</color>
+    <color name="cl_click_c">#e1e4e5</color>
+    <color name="cl_click_c_night">#202840</color>
+
+    <color name="cl_other_a">#869ebf</color>
+    <color name="cl_other_a_night">#62748c</color>
+
+    <color name="nsdk_cl_asr_voice_wave">#283385ff</color>
+    <color name="color_samll_red">#FE6200</color>
+    <color name="fellow_speak_progress_backgroud">#ff3b30</color>
+
+    <color name="fellow_speak_layout_backgroud">#ffffff</color>
+    <color name="fellow_speak_layout_backgroud_night">#2e3242</color>
+
+    <color name="cl_text_experience_e">#ffffff</color>
+    <color name="cl_text_experience_e_night">#f1d0d0</color>
+
+    <color name="cl_text_experience_unfocus_e">#ffffff</color>
+    <color name="cl_text_experience_unfocus_e_night">#cacfd6</color>
+
+
+    <color name="color_btn1">#577498</color>
+
+    <color name="color_btn2">#FE6200</color>
+
+</resources>

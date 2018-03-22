@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <!--   <include
+       android:id="@+id/info"
+       layout="@layout/toor_head_hud"></include>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#33425F"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="蓝牙正在连接中..."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FEFFF5"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/bluetooth2" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.shdnxc.cn.activity.view.CarCircleProgressBar
+                    android:id="@+id/crpv"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    my:inCircleColor="#32435D"
+                    my:lineWidth="6dp"
+                    my:outCircleColor="#32435D"
+                    my:progressColor="#32435D"
+                    my:textBold="true"
+                    my:textColor="#c5cec2" />
+                <!--   <com.shdnxc.cn.activity.view.CircleProgressBar
+                       android:id="@+id/crpv"
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       app:inCircleColor="#32435D"
+                       app:outCircleColor="#32435D"
+                       app:progressColor="#32435D"
+                       app:textBold="true"
+                       app:textColor="#c5cec2"
+                       app:lineWidth="6dp"/>-->
+                <TextView
+                    android:id="@+id/showcarinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_speed"
+                    android:layout_centerHorizontal="true"
+                    android:text="车速km/h"
+                    android:textColor="@color/color_tv"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="@color/color_tv"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_speed"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <!--  <com.shdnxc.cn.activity.view.CircleProgressBar
+                      android:id="@+id/crpv2"
+                      android:layout_width="100dp"
+                      android:layout_height="100dp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                      app:inCircleColor="#32435D"
+                      app:outCircleColor="#32435D"
+                      app:progressColor="#32435D"
+                      app:textBold="true"
+                      app:textColor="#c5cec2"
+                      app:lineWidth="6dp"/>-->
+
+                <com.shdnxc.cn.activity.view.CircleProgressBar
+                    android:id="@+id/crpv2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    my:inCircleColor="#32435D"
+                    my:lineWidth="6dp"
+                    my:outCircleColor="#32435D"
+                    my:progressColor="#32435D"
+                    my:textBold="true"
+                    my:textColor="#c5cec2" />
+
+                <TextView
+                    android:id="@+id/showcarinfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_rotate"
+                    android:layout_centerHorizontal="true"
+                    android:text="转速r/min"
+                    android:textColor="@color/color_tv"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_rotate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="@color/color_tv"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rotate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/arrow" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/line" />
+
+                <TextView
+                    android:id="@+id/tv_water"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="水温 ℃"
+                    android:textColor="@color/color_tv"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_water_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_water"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/water_animlist" />
+
+                <TextView
+                    android:id="@+id/tv_water_ral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_water_1"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="---"
+                    android:textColor="@color/color_tv"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_water_ral"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/water_compensation" />
+
+                <ImageView
+                    android:id="@+id/end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/line" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/separator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/line" />
+
+                <TextView
+                    android:id="@+id/tv_iol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="油量%"
+                    android:textColor="@color/color_tv"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_iol_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_iol"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ioc_animlist" />
+
+                <TextView
+                    android:id="@+id/tv_iol_ral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_iol_1"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="---"
+                    android:textColor="@color/color_tv"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_iol_ral"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/_oil_box" />
+
+                <ImageView
+                    android:id="@+id/end2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/line" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/separator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/line" />
+
+                <TextView
+                    android:id="@+id/tv_battle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="电压 V"
+                    android:textColor="@color/color_tv"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_battle_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_battle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/battle_animlist" />
+
+                <TextView
+                    android:id="@+id/tv_battle_ral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_battle_1"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="---"
+                    android:textColor="@color/color_tv"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_battle_ral"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/electric_box" />
+
+                <ImageView
+                    android:id="@+id/end3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/line" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/re_voice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/voicePic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/voice_press"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="语音控制"
+                    android:textColor="@color/color_tv"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_baidu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/baiduPic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bai_press"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/tv_map_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/baiduPic"
+                    android:gravity="center"
+                    android:text="百度导航"
+                    android:textColor="@color/color_tv"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- <include layout="@layout/include_speed_rotate"></include>
+
+     <include layout="@layout/include_weather_voltage"></include>
+
+     <include layout="@layout/include_oil"></include>
+ -->
+    <!-- <include layout="@layout/include_car_bottom"></include>-->
+
+
+</LinearLayout>

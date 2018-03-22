@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#4894EB">
+
+    <ImageView
+        android:layout_marginLeft="4dp"
+        android:id="@+id/iv_hud"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="6dp"
+        android:src="@mipmap/ic_about_logo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_tv"
+        android:text="固件升级"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/toor_iv_detection"
+        style="@style/toorIV"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:visibility="visible"
+        android:src="@mipmap/ic_situation" />
+
+
+
+
+</RelativeLayout>

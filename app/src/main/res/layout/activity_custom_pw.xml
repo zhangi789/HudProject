@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/re_tips_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@mipmap/background"
+            android:visibility="visible"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_tips_show2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_select3"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/tv_content_tips"
+                android:gravity="center"
+                android:text="提示"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_content_tips"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="设置为当前主题"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_cotentt_tips"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_content_tips"
+                android:src="@mipmap/shape" />
+
+            <TextView
+                android:id="@+id/tv_tips_sure"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/iv_cotentt_tips"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#6AA8FD"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

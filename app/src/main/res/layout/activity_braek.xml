@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <include
+        layout="@layout/include_codema"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/break_lv"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <ListView
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/break_lv"
+            android:id="@+id/break_lv_data"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <include layout="@layout/lv_sigal"></include>
+
+    </RelativeLayout>
+
+</LinearLayout>

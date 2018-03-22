@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="8.5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:background="@drawable/textview_border"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/speedPic"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_situation_speed"/>
+            <TextView
+                android:id="@+id/sppedTv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/speedPic"
+                android:layout_alignBottom="@+id/speedPic"
+                android:text="车速Km/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/car_oil"
+                android:text="0.00x100"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sppedTv"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:background="@drawable/textview_border"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/cons"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_situation_speed"/>
+            <TextView
+                android:id="@+id/conTV"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cons"
+                android:layout_alignBottom="@+id/cons"
+                android:text="车速Km/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/car_volatage"
+                android:text="0.00x100"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/conTV"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
